@@ -1,0 +1,218 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Manrope', sans-serif;
+}
+body {
+  background-color: rgba(27, 27, 27, 0.915);
+}
+
+h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 8cap;
+    
+}
+
+h2 {
+  color: aliceblue;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 6cap;
+  
+}
+
+p {
+  color: aliceblue;
+}
+
+
+.collapse {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.navbar-brand {
+  margin-left: 60px ;
+}
+.navbar-nav {
+  margin-inline: 60px;
+}
+
+.nav-item {
+  margin-inline: 20px;
+}
+
+.navbar-light .navbar-brand {
+  color: aliceblue;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color:aliceblue;
+}
+
+.navbar-light .navbar-brand:hover {
+  color: rgba(174, 254, 181, 0.897);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: rgba(174, 254, 181, 0.897);
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: rgba(174, 254, 181, 0.897);
+}
+
+.navbar-brand {
+  font-size: xx-large;
+}
+
+.nav-link {
+  font-size: x-large;
+}
+
+.head {
+  margin-bottom: 40px;
+  padding-inline: 1rem 1rem;
+}
+
+.card {
+  background-color: rgba(255, 228, 196, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border: 0;
+  
+}
+
+.card-body {
+  border: 0cap;
+  background-color: rgba(240, 248, 255, 0);
+  color: aliceblue;
+  
+}
+
+.photo {
+  position: relative;
+  overflow: hidden;
+  width: 600px;
+  height: 663px;
+  border-radius: 18px;
+}
+
+.myphoto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 600px;
+
+}
+
+
+.site-img {
+  background-color: rgba(109, 109, 109, 0.615);
+  width: 600px;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  margin-block: 40px;
+  margin-inline: 40px;
+}
+
+.site-screen {
+  width: 100%;
+  max-width: 486px;
+  height: 347px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 18px;
+  /* border: 2px solid rgba(0, 0, 0, 0.719); */
+  
+}
+
+.con-work {
+  width: 145px;
+  height: 37px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-radius: 18px;
+  border: 0px;
+  background-color: rgba(20, 20, 20, 0.704);
+  color: rgba(240, 248, 255, 0.929);
+  font-family: 'Manrope', sans-serif;
+}
+
+.card-disc {
+  width: 600px;
+  height: 600px;
+  color: aliceblue;
+  margin-inline: 40px;
+}
+
+
+.contact {
+  margin-top: 40px;
+}
+
+.btn {
+  border: 1px solid rgba(84, 125, 87, 0.286);
+  background-color: rgba(174, 254, 181, 0.897);
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background-color: rgba(99, 152, 103, 0.723);
+  color: aliceblue;
+}
+
+.contact-icon {
+  width: 40px;
+  margin-left: 5px;
+}
+
+
+
+
+
+
+@media (max-width: 1024px) {
+ .card  {
+  flex-direction: column;
+ }
+}
+
+@media (max-width: 767px) {
+  .photo {
+    width: 100%;
+  }
+  .site-img {
+    width: 100%;
+    height: 400px;
+  }
+  .site-screen {
+    width: 280px;
+    height: 148px;
+  }
+  .card-disc {
+    width: 100%;
+    
+  }
+ }
+
+ @media (max-width: 320px) {
+  .site-img {
+    width: 100%;
+    height: 300px;
+  }
+ }
